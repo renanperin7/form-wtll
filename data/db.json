@@ -1,18 +1,18 @@
 {
-    "user": [
-        {
-            "id": 1,
-            "name": "Renan",
-            "email":"renanperin@hotmail.com",
-            "assunto":"problemas na compra",
-            "message": "tive problemas nas compras pelo site"
-        },
-        {
-            "id": 2,
-            "name": "joao",
-            "email":"joao@hotmail.com",
-            "assunto":"problemas no cupom",
-            "message": "tive problemas na confirmação do cupom"
-        }
-    ]
+  "user": [
+    {
+      "id": 1,
+      "name": "Renan",
+      "email": "renanperin@hotmail.com",
+      "assunto": "problemas na compra",
+      "message": "tive problemas nas compras pelo site"
+    },
+    {
+      "id": 2,
+      "name": "joao",
+      "email": "joao@hotmail.com",
+      "assunto": "problemas no cupom",
+      "message": "tive problemas na confirmação do cupom"
+    }
+  ]
 }
