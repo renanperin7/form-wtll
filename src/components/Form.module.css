@@ -42,11 +42,15 @@
 .input_box input {
     border: none;
     padding-left: 10px;
+    margin: 0px 0px 0px 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.452);
 }
 
 .input_box textarea {
     border: none;
     padding-left: 10px;
+    margin: 0px 5px 0px 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.452);
 }
 
 .input_box input:focus-visible {
