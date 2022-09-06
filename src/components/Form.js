@@ -91,7 +91,7 @@ const Form = (user) => {
                     <input
                         type="email"
                         name='email'
-                        maxLength="20"
+                        maxLength="40"
                         required
                         placeholder='Email'
                         value={email}
