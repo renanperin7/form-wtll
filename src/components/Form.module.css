@@ -3,9 +3,14 @@
     border: 2px solid #000;
     width: 400px;
     border-radius: 10px;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.199);
     max-width: 50%;
     max-height: 70%;
     margin: 100px auto;
+}
+
+.form form {
+    margin-top: 50px;
 }
 
 h1 {
@@ -17,7 +22,7 @@ h1 {
     font-size: medium;
     padding: 30px;
     margin: auto;
-    height: 50px;
+    height: 60px;
     width: 600px;
     max-width: 80%;
     border-radius: 10px;
@@ -91,22 +96,13 @@ textarea {
     margin-left: 30%;
     width: 120px;
     font-weight: bold;
-    border: none;
+    border-radius: 10px;
     font-size: 1em;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.199);
 }
 
 .btn:hover {
     color: rgb(79, 79, 255);
-}
-
-.input_box span {
-    color: red;
-    font-size: x-small;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
 }
 
 @media screen and (max-width:800px) {
