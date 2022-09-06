@@ -120,6 +120,7 @@ const Form = (user) => {
                     <textarea
                           name='message'
                           maxLength="200"
+                          rows={6}
                           required
                           placeholder='Mensagem'
                           value={message}
