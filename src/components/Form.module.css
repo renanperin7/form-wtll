@@ -42,14 +42,12 @@
 .input_box input {
     border: none;
     padding-left: 10px;
-    border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
 }
 
 .input_box textarea {
     border: none;
     padding-left: 10px;
-    border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
 }
 
