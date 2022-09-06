@@ -15,9 +15,10 @@ const Form = (user) => {
     const [email, setEmail] = useState("")
     const [assunto, setAssunto] = useState("")
     const [message, setMessage] = useState("")
-  
+
     const [error, setError] = useState(null)
-  
+
+    
     useEffect(() => {
   
       async function fetchData() {
@@ -64,62 +65,70 @@ const Form = (user) => {
     
     };  
 
+    
+
   return (
     <div>
-        <div>
-        <form onSubmit={handleSubmit} className={styles.form}>
-          <h1>FALE CONOSCO</h1>
-            <div>
-              <label>
-                  <input
-                      type="text"
-                      name='name'
-                      maxLength='30'
-                      required
-                      placeholder='Nome'
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                  />
-              </label>
-            </div>
-            <div>
-              <label>
-                  <input
-                      type="email"
-                      name='email'
-                      maxLength="20"
-                      required
-                      placeholder='Email'
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                  />
-              </label>
-            </div>
-            <label>
-                <input
-                      type="text"
-                      name='assunto'
-                      maxLength="50"
-                      required
-                      placeholder='Assunto'
-                      value={assunto}
-                      onChange={(e) => setAssunto(e.target.value)}
-                />
-            </label>
-            <label>
-                <textarea
-                      name='message'
-                      maxLength="200"
-                      required
-                      placeholder='Mensagem'
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                />
-            </label>
+        <div className={styles.form}>
+        <h1>FALE CONOSCO</h1>
+        <form onSubmit={handleSubmit}>
+            <div className={styles.input_group}>
+              <div className={styles.input_box}>
+                <label>
+                    <input
+                        type="text"
+                        name='name'
+                        maxLength='30'
+                        required
+                        placeholder='Nome'
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                </label>
+              </div>
+              <div className={styles.input_box}>
+                <label>
+                    <input
+                        type="email"
+                        name='email'
+                        maxLength="20"
+                        required
+                        placeholder='Email'
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                </label>
+              </div>
+              </div>
+              <div className={styles.input_box}>
+                <label>
+                    <input
+                          type="text"
+                          name='assunto'
+                          maxLength="50"
+                          required
+                          placeholder='Assunto'
+                          value={assunto}
+                          onChange={(e) => setAssunto(e.target.value)}
+                    />
+                </label>
+              </div>
+              <div className={styles.input_box}>
+                <label>
+                    <textarea
+                          name='message'
+                          maxLength="200"
+                          required
+                          placeholder='Mensagem'
+                          value={message}
+                          onChange={(e) => setMessage(e.target.value)}
+                    />
+                </label>
+              </div>
+            
             <div className={styles.captcha}>
             <ReCAPTCHA
                 sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                required
             />
         </div>
             <input className={styles.btn} type="submit" value="Enviar" />
