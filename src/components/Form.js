@@ -65,7 +65,9 @@ const Form = (user) => {
     
     };  
 
-    
+    function onChange(value) {
+      console.log("Captcha value:", value);
+    }
 
   return (
     <div>
@@ -129,6 +131,7 @@ const Form = (user) => {
             <div className={styles.captcha}>
             <ReCAPTCHA
                 sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                onChange={onChange}
             />
         </div>
             <input className={styles.btn} type="submit" value="Enviar" />
