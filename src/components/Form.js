@@ -135,10 +135,10 @@ const Form = (user) => {
             {!error && <p>{error}</p>}
         <ul>{users.map((user) => (
           <li key={user.id}>
-            {user.name} <br/>
-            {user.email} <br/>
-            {user.assunto} <br/>
-            {user.message} <br/>
+            <span>Nome:</span> {user.name} <br/>
+            <span>Email:</span> {user.email} <br/>
+            <span>Assunto:</span> {user.assunto} <br/>
+            <span>Mensagem:</span> {user.message} <br/>
           </li>
         ))}</ul>
         </form>
